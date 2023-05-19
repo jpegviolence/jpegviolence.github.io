@@ -556,6 +556,15 @@ h1 {
     z-index: 1;
 }
 
+.scroll-disable {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
 /* стиль для активированного бургер меню, делает его видимым */
 .burger-bg.active {
     opacity: 1;
@@ -584,11 +593,7 @@ h1 {
 }
 
 /*---------------------------медиа-запросы----------------------------------*/
-@media (max-width: 480px) and (orientation: portrait) {
-    /* .header {
-        padding-top: 95%;
-    } */
-
+@media (max-width: 480px) {
     .burger-btn {
         width: 25vw;
         height: 20vw;
@@ -678,7 +683,7 @@ h1 {
     }
 }
 
-@media (min-width: 481px) and (max-width: 576px) and (orientation: portrait) {
+@media (min-width: 481px) and (max-width: 576px) {
     .burger-btn {
         width: 20vw;
         height: 16vw;
@@ -762,15 +767,11 @@ h1 {
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
-    /* .header {
-        padding-top: 70%;
-    } */
-
+@media (min-width: 577px) and (max-width: 768px) {
     .burger-btn {
         width: 12vw;
         height: 10vw;
-        margin-top: 70%;
+        margin-top: 65%;
     }
 
     .header_content a,
@@ -793,7 +794,6 @@ h1 {
         top: 0;
         left: 0;
         padding-left: 23%;
-        /* padding-top: 70%; */
     }
 
     #films-header-content {
@@ -837,7 +837,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1000px) and (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1000px) {
     .main-header-content a {
         font-size: 6vw;
     }
@@ -883,6 +883,7 @@ h1 {
     }
 }
 
+/* горизонтальная ориентация для главной страницы */
 @media (orientation: landscape) and (max-width: 2400px) {
     .title {
         font-size: 8vw;
@@ -900,21 +901,10 @@ h1 {
     }
 }
 
-@media (orientation: landscape) and (max-height: 1200px) {
-    .burger-btn {
-        width: 4vw;
-        height: 2vw;
-    }
-}
-
 /* когда экран больше 769рх отключаю бургер-меню */
-@media (min-width:769px) or (orientation: landscape) {
+@media (min-width:769px) {
     .burger-btn {
         display: none;
-    }
-    .burger-bg.active{
-        visibility: hidden;
-        opacity: 0;
     }
 }
 
@@ -929,5 +919,31 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width:768px) and (orientation: landscape) {
+    .header_content {
+        margin-top: 5%;
+        z-index: 2;
+        opacity: 1;
+        visibility: visible;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_content a{
+        font-size: 5vw;
+    }
+    .burger-btn {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    .burger-bg.active {
+        visibility: hidden;
+        opacity: 0;
     }
 }
