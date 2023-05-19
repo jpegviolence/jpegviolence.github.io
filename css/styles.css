@@ -592,7 +592,7 @@ h1 {
     .burger-btn {
         width: 25vw;
         height: 20vw;
-        margin-top: 85%;
+        margin-top: 110%;
     }
 
     .burger-btn::after,
@@ -770,7 +770,7 @@ h1 {
     .burger-btn {
         width: 12vw;
         height: 10vw;
-        margin-top: 65%;
+        margin-top: 70%;
     }
 
     .header_content a,
@@ -793,7 +793,7 @@ h1 {
         top: 0;
         left: 0;
         padding-left: 23%;
-        padding-top: 70%;
+        /* padding-top: 70%; */
     }
 
     #films-header-content {
