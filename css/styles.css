@@ -563,7 +563,8 @@ h1 {
 }
 
 .header_content.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 /* анимация крестика */
@@ -584,13 +585,14 @@ h1 {
 
 /*---------------------------медиа-запросы----------------------------------*/
 @media (max-width: 480px) and (orientation: portrait) {
-    .header {
+    /* .header {
         padding-top: 95%;
-    }
+    } */
 
     .burger-btn {
         width: 25vw;
         height: 20vw;
+        margin-top: 85%;
     }
 
     .burger-btn::after,
@@ -677,13 +679,10 @@ h1 {
 }
 
 @media (min-width: 481px) and (max-width: 576px) and (orientation: portrait) {
-    .header {
-        padding-top: 85%;
-    }
-
     .burger-btn {
         width: 20vw;
         height: 16vw;
+        margin-top: 85%;
     }
 
     .burger-btn::after,
@@ -764,13 +763,14 @@ h1 {
 }
 
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
-    .header {
+    /* .header {
         padding-top: 70%;
-    }
+    } */
 
     .burger-btn {
         width: 12vw;
         height: 10vw;
+        margin-top: 65%;
     }
 
     .header_content a,
@@ -919,9 +919,8 @@ h1 {
     .header_content {
         margin-top: 5%;
         z-index: 2;
-        /* opacity: 0;
-        visibility: hidden; */
-        display: none;
+        opacity: 0;
+        visibility: hidden;
 
         flex-direction: column;
         justify-content: center;
