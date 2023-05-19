@@ -871,10 +871,10 @@ h1 {
 
 @media (orientation: landscape) and (max-width: 1200px) {
     .title{
-        font-size: 10vw;
+        font-size: 8vw;
     }
     .main-header-content a {
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .main-header-content{
         padding-top: 5%;
