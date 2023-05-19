@@ -585,9 +585,9 @@ h1 {
 
 /*---------------------------медиа-запросы----------------------------------*/
 @media (max-width: 480px) and (orientation: portrait) {
-    /* .header {
+    .header {
         padding-top: 95%;
-    } */
+    }
 
     .burger-btn {
         width: 25vw;
