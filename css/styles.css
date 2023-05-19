@@ -563,8 +563,7 @@ h1 {
 }
 
 .header_content.active {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
 }
 
 /* анимация крестика */
@@ -920,8 +919,9 @@ h1 {
     .header_content {
         margin-top: 5%;
         z-index: 2;
-        opacity: 0;
-        visibility: hidden;
+        /* opacity: 0;
+        visibility: hidden; */
+        display: none;
 
         flex-direction: column;
         justify-content: center;
