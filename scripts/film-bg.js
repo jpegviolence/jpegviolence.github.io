@@ -1,37 +1,29 @@
 let filmBG = document.querySelector('.films-bg')
-let id
+let id //id получаемой ссылки
 
-document.querySelector('#films').addEventListener('mouseover', function(e){
-    id = e.target.id;
-    filmBG.classList.add('films-bg-anim')
-    setTimeout(removeAnim, 500)
-    
-    switch(id){
-        case '1': 
-            filmBG.style.backgroundImage = "url(img/ISA/ISA.jpg)"
-        break
-        case '2': 
-            filmBG.style.backgroundImage = "url(img/irreversible/irreversible.jpg)"
-        break
-        case '3': 
-            filmBG.style.backgroundImage = "url(img/ETV/ETV.jpg)"
-        break
-        case '4': 
-            filmBG.style.backgroundImage = "url(img/love/love.jpg)"
-        break
-        case '5': 
-            filmBG.style.backgroundImage = "url(img/climax/climax.jpg)"
-        break
-        case '6': 
-            filmBG.style.backgroundImage = "url(img/vortex/vortex.jpg)"
-        break
-    }
+// массив с картинками для бэкграунда
+const BGpics = ["url(img/ISA/ISA.jpg)",
+    "url(img/irreversible/irreversible.jpg)",
+    "url(img/ETV/ETV.jpg)",
+    "url(img/love/love.jpg)",
+    "url(img/climax/climax.jpg)",
+    "url(img/vortex/vortex.jpg)"]
+
+//при наведении на ссылку из списка с id films получаем id ссылки
+document.querySelector('#films').addEventListener('mouseover', function (e) {
+    id = Number(e.target.id);
+    filmBG.classList.add('films-bg-anim') //добавляем анимацию
+    setTimeout(removeAnim, 500) //через полсекунды убираем ее
+
+    filmBG.style.backgroundImage = BGpics[id] //берем картинку из массива в соответствии с id ссылки
 });
 
-function removeAnim(){
+//функция, убирающая анимацию
+function removeAnim() {
     filmBG.classList.remove('films-bg-anim')
 }
 
-document.querySelector('#films').addEventListener('mouseout', function(e){
+//когда уводим мышь с ссылки убираем анимацию
+document.querySelector('#films').addEventListener('mouseout', function (e) {
     removeAnim()
 });
