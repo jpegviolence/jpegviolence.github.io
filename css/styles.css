@@ -584,7 +584,7 @@ h1 {
 }
 
 /*---------------------------медиа-запросы----------------------------------*/
-@media (max-width: 480px) {
+@media (max-width: 480px) or (orientation: portrait) {
     .header {
         padding-top: 95%;
     }
@@ -681,7 +681,7 @@ h1 {
     }
 }
 
-@media (min-width: 481px) and (max-width: 576px) {
+@media (min-width: 481px) and (max-width: 576px) or (orientation: portrait) {
     .header {
         padding-top: 85%;
     }
@@ -776,7 +776,7 @@ h1 {
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) or (orientation: portrait) {
     .header {
         padding-top: 70%;
     }
@@ -854,7 +854,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1000px) or (orientation: portrait) {
     .main-header-content a {
         font-size: 6vw;
     }
@@ -871,7 +871,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) or (orientation: portrait) {
 
     .header_content a,
     .main-header-content a {
@@ -932,14 +932,14 @@ h1 {
 } */
 
 /* когда экран больше 769рх отключаю бургер-меню */
-@media (min-width:769px) {
+@media (min-width:769px) or (orientation: landscape) {
     .burger-btn {
         display: none;
     }
 }
 
 /* когда экран становится меньше 768рх прячу контент хедера */
-@media (max-width:768px) {
+@media (max-width:768px) and (orientation: portrait) {
     .header_content {
         margin-top: 5%;
         z-index: 2;
