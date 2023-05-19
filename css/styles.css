@@ -584,7 +584,7 @@ h1 {
 }
 
 /*---------------------------медиа-запросы----------------------------------*/
-@media screen and (max-width: 480px) {
+@media all and (max-width: 480px) {
     .header {
         padding-top: 95%;
     }
@@ -677,7 +677,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 576px) {
+@media all and (min-width: 481px) and (max-width: 576px) {
     .header {
         padding-top: 85%;
     }
@@ -768,7 +768,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media all and (min-width: 577px) and (max-width: 768px) {
     .header {
         padding-top: 70%;
     }
@@ -842,7 +842,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media all and (min-width: 769px) and (max-width: 1000px) {
     .main-header-content a {
         font-size: 6vw;
     }
@@ -859,7 +859,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media all and (min-width: 769px) and (max-width: 1200px) {
 
     .header_content a,
     .main-header-content a {
@@ -888,7 +888,7 @@ h1 {
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 2400px) {
+/* @media (orientation: landscape) and (max-width: 2400px) {
     .title {
         font-size: 8vw;
     }
@@ -905,7 +905,7 @@ h1 {
     }
 }
 
-@media screen and (orientation: landscape) and (max-height: 1200px) {
+@media (orientation: landscape) and (max-height: 1200px) {
     .header {
         padding-top: 50%;
     }
@@ -913,7 +913,7 @@ h1 {
         width: 8vw;
         height: 6vw;
     }
-}
+} */
 
 /* когда экран больше 769рх отключаю бургер-меню */
 @media screen and (min-width:769px) {
