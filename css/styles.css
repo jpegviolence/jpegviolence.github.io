@@ -888,7 +888,7 @@ h1 {
     }
 }
 
-@media (orientation: landscape) and (max-width: 2400px) {
+@media screen and (orientation: landscape) and (max-width: 2400px) {
     .title {
         font-size: 8vw;
     }
@@ -905,7 +905,10 @@ h1 {
     }
 }
 
-@media (orientation: landscape) and (max-height: 1200px) {
+@media screen and (orientation: landscape) and (max-height: 1200px) {
+    .header {
+        padding-top: 70%;
+    }
     .burger-btn {
         width: 8vw;
         height: 6vw;
