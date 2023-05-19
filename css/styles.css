@@ -584,7 +584,7 @@ h1 {
 }
 
 /*---------------------------медиа-запросы----------------------------------*/
-@media (max-width: 480px) or (orientation: portrait) {
+@media (max-width: 480px) and (orientation: portrait) {
     .header {
         padding-top: 95%;
     }
@@ -677,7 +677,7 @@ h1 {
     }
 }
 
-@media (min-width: 481px) and (max-width: 576px) or (orientation: portrait) {
+@media (min-width: 481px) and (max-width: 576px) and (orientation: portrait) {
     .header {
         padding-top: 85%;
     }
@@ -732,10 +732,6 @@ h1 {
         font-size: 8.5vw;
     }
 
-    .img-title{
-        font-size: 18vw;
-    }
-
     .main-text {
         font-size: 3.5vw;
     }
@@ -768,7 +764,7 @@ h1 {
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) or (orientation: portrait) {
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
     .header {
         padding-top: 70%;
     }
@@ -842,7 +838,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1000px) or (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1000px) and (orientation: portrait) {
     .main-header-content a {
         font-size: 6vw;
     }
@@ -859,7 +855,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) or (orientation: portrait) {
+@media (min-width: 769px) and (max-width: 1200px) {
 
     .header_content a,
     .main-header-content a {
@@ -906,12 +902,9 @@ h1 {
 }
 
 @media (orientation: landscape) and (max-height: 1200px) {
-    .header {
-        padding-top: 50%;
-    }
     .burger-btn {
-        width: 8vw;
-        height: 6vw;
+        width: 4vw;
+        height: 2vw;
     }
 }
 
