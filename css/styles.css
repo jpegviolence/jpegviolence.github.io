@@ -765,9 +765,9 @@ h1 {
 }
 
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
-    .header {
+    /* .header {
         padding-top: 70%;
-    }
+    } */
 
     .burger-btn {
         width: 12vw;
