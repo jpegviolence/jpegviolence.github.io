@@ -907,7 +907,7 @@ h1 {
 
 @media screen and (orientation: landscape) and (max-height: 1200px) {
     .header {
-        padding-top: 70%;
+        padding-top: 50%;
     }
     .burger-btn {
         width: 8vw;
