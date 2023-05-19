@@ -877,6 +877,7 @@ h1 {
         font-size: 4vw;
     }
     .main-header-content{
+        padding-top: 0%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
