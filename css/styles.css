@@ -593,6 +593,7 @@ h1 {
 }
 
 /*---------------------------медиа-запросы----------------------------------*/
+/* до 480px */
 @media (max-width: 480px) {
     .burger-btn {
         width: 25vw;
@@ -632,13 +633,13 @@ h1 {
         font-size: 10vw;
     }
 
-    .filmList a {
-        font-size: 11vw;
-    }
-
     #films-header-content {
         align-items: self-start;
         padding-left: 25%;
+    }
+
+    .filmList a {
+        font-size: 11vw;
     }
 
     .main-text {
@@ -933,9 +934,11 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-    .header_content a{
+
+    .header_content a {
         font-size: 5vw;
     }
+
     .burger-btn {
         display: none;
     }
