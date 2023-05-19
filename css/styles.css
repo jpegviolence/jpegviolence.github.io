@@ -66,16 +66,16 @@ body {
 }
 
 /* контент хедера (меню) */
-.header_content {
+.header_content, .main-header-content{
     display: flex;
     gap: 2vw;
 }
 
-.header_content li {
+.header_content li, .main-header-content li {
     list-style-type: none; 
 }
 
-.header_content a {
+.header_content a, .main-header-content a {
     font-weight: 500;
     font-size: 2vw;
     color: rgb(255, 238, 0);
@@ -86,7 +86,7 @@ body {
     vertical-align: middle;
 }
 
-.header_content a:hover {
+.header_content a:hover, .main-header-content a:hover {
     color: rgb(255, 153, 0);
     transition: all ease .2s;
 }
@@ -588,8 +588,19 @@ h1 {
         height: 2vw;
     }
 
-    .header_content a {
+    .header_content a, .main-header-content a {
         font-size: 8vw;
+    }
+
+    .main-header-content{
+        padding-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 20vw;
     }
 
     #films-header {
@@ -667,8 +678,19 @@ h1 {
         height: 2vw;
     }
 
-    .header_content a {
-        font-size: 6vw;
+    .header_content a, .main-header-content a {
+        font-size: 8vw;
+    }
+
+    .main-header-content{
+        padding-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 20vw;
     }
 
     #films-header {
@@ -740,8 +762,19 @@ h1 {
         height: 10vw;
     }
 
-    .header_content a {
+    .header_content a, .main-header-content a {
         font-size: 7vw;
+    }
+
+    .main-header-content{
+        padding-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 10vw;
     }
 
     #films-header {
@@ -789,6 +822,23 @@ h1 {
 
     .filmList a {
         font-size: 6vw;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    .main-header-content a {
+        font-size: 6vw;
+    }
+
+    .main-header-content{
+        padding-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 10vw;
     }
 }
 
