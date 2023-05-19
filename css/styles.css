@@ -912,6 +912,10 @@ h1 {
     .burger-btn {
         display: none;
     }
+    .burger-bg.active{
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
 /* когда экран становится меньше 768рх прячу контент хедера */
