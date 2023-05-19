@@ -869,6 +869,21 @@ h1 {
     }
 }
 
+@media (orientation: landscape) and (max-width: 1200px) {
+    .title{
+        font-size: 10vw;
+    }
+    .main-header-content a {
+        font-size: 5vw;
+    }
+    .main-header-content{
+        padding-top: 5%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 /* когда экран больше 769рх отключаю бургер-меню */
 @media screen and (min-width:769px) {
     .burger-btn {
