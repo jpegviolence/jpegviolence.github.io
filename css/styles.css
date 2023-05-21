@@ -592,13 +592,8 @@ h1 {
     visibility: hidden;
 }
 
-
-.burger-bg.active {
-    visibility: hidden;
-    opacity: 0;
-}
-
 /*---------------------------медиа-запросы----------------------------------*/
+/* до 480рх */
 @media (max-width: 480px) and (orientation: portrait) {
     .burger-btn {
         width: 25vw;
@@ -668,6 +663,21 @@ h1 {
         margin-top: 2%;
     }
 
+    .popup-close-btn {
+        font-size: 8vw;
+        right: 3%;
+        top: 0%;
+    }
+
+    .slider-next,
+    .slider-prev {
+        font-size: 12vw;
+    }
+
+    .slider-prev{
+        left: 6%;
+    }
+
     .footer-item a {
         font-size: 6vw;
     }
@@ -689,6 +699,7 @@ h1 {
     }
 }
 
+/* до 576рх */
 @media (min-width: 481px) and (max-width: 576px) and (orientation: portrait) {
     .burger-btn {
         width: 20vw;
@@ -753,6 +764,21 @@ h1 {
         font-size: 4vw;
     }
 
+    .popup-close-btn {
+        font-size: 8vw;
+        right: 3%;
+        top: 0%;
+    }
+
+    .slider-next,
+    .slider-prev {
+        font-size: 12vw;
+    }
+
+    .slider-prev{
+        left: 6%;
+    }
+
     .footer-item a {
         font-size: 5vw;
     }
@@ -773,6 +799,7 @@ h1 {
     }
 }
 
+/* до 768рх */
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
     .burger-btn {
         width: 12vw;
@@ -820,6 +847,21 @@ h1 {
         font-size: 4vw;
     }
 
+    .popup-close-btn {
+        font-size: 6vw;
+        right: 3%;
+        top: 0%;
+    }
+
+    .slider-next,
+    .slider-prev {
+        font-size: 9vw;
+    }
+
+    .slider-prev{
+        left: 4%;
+    }
+
     .footer-item a {
         font-size: 3vw;
     }
@@ -844,6 +886,7 @@ h1 {
     }
 }
 
+/* до 1000рх */
 @media (min-width: 769px) and (max-width: 1000px) and (orientation: portrait) {
     .main-header-content a {
         font-size: 6vw;
@@ -859,8 +902,24 @@ h1 {
     .title {
         font-size: 10vw;
     }
+
+    .popup-close-btn {
+        font-size: 5vw;
+        right: 2%;
+        top: 0%;
+    }
+
+    .slider-next,
+    .slider-prev {
+        font-size: 8vw;
+    }
+
+    .slider-prev{
+        left: 4%;
+    }
 }
 
+/* до 1200рх */
 @media (min-width: 769px) and (max-width: 1200px) {
 
     .header_content a,
@@ -880,6 +939,21 @@ h1 {
         font-size: 3.5vw;
     }
 
+    .popup-close-btn {
+        font-size: 4vw;
+        right: 3%;
+        top: 0%;
+    }
+
+    .slider-next,
+    .slider-prev {
+        font-size: 6vw;
+    }
+
+    .slider-prev{
+        left: 3%;
+    }
+
     .footer-item a {
         font-size: 2vw;
     }
@@ -887,23 +961,6 @@ h1 {
     .icon {
         max-width: 3vw;
         max-height: 3vw;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 2400px) {
-    .title {
-        font-size: 8vw;
-    }
-
-    .main-header-content a {
-        font-size: 4vw;
-    }
-
-    .main-header-content {
-        padding-top: 0%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
 }
 
