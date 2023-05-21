@@ -592,9 +592,14 @@ h1 {
     visibility: hidden;
 }
 
+
+.burger-bg.active {
+    visibility: hidden;
+    opacity: 0;
+}
+
 /*---------------------------медиа-запросы----------------------------------*/
-/* до 480px */
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
     .burger-btn {
         width: 25vw;
         height: 20vw;
@@ -633,13 +638,13 @@ h1 {
         font-size: 10vw;
     }
 
+    .filmList a {
+        font-size: 11vw;
+    }
+
     #films-header-content {
         align-items: self-start;
         padding-left: 25%;
-    }
-
-    .filmList a {
-        font-size: 11vw;
     }
 
     .main-text {
@@ -663,21 +668,6 @@ h1 {
         margin-top: 2%;
     }
 
-    .popup-close-btn {
-        font-size: 8vw;
-        right: 3%;
-        top: 0%;
-    }
-
-    .slider-next,
-    .slider-prev {
-        font-size: 12vw;
-    }
-
-    .slider-prev{
-        left: 6%;
-    }
-
     .footer-item a {
         font-size: 6vw;
     }
@@ -699,7 +689,7 @@ h1 {
     }
 }
 
-@media (min-width: 481px) and (max-width: 576px) {
+@media (min-width: 481px) and (max-width: 576px) and (orientation: portrait) {
     .burger-btn {
         width: 20vw;
         height: 16vw;
@@ -763,21 +753,6 @@ h1 {
         font-size: 4vw;
     }
 
-    .popup-close-btn {
-        font-size: 8vw;
-        right: 3%;
-        top: 0%;
-    }
-
-    .slider-next,
-    .slider-prev {
-        font-size: 12vw;
-    }
-
-    .slider-prev{
-        left: 6%;
-    }
-
     .footer-item a {
         font-size: 5vw;
     }
@@ -798,11 +773,11 @@ h1 {
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
     .burger-btn {
         width: 12vw;
         height: 10vw;
-        margin-top: 65%;
+        margin-top: 70%;
     }
 
     .header_content a,
@@ -825,6 +800,7 @@ h1 {
         top: 0;
         left: 0;
         padding-left: 23%;
+        /* padding-top: 70%; */
     }
 
     #films-header-content {
@@ -842,21 +818,6 @@ h1 {
 
     .quote-text {
         font-size: 4vw;
-    }
-
-    .popup-close-btn {
-        font-size: 6vw;
-        right: 3%;
-        top: 0%;
-    }
-
-    .slider-next,
-    .slider-prev {
-        font-size: 9vw;
-    }
-
-    .slider-prev{
-        left: 4%;
     }
 
     .footer-item a {
@@ -883,7 +844,7 @@ h1 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1000px) and (orientation: portrait) {
     .main-header-content a {
         font-size: 6vw;
     }
@@ -898,25 +859,12 @@ h1 {
     .title {
         font-size: 10vw;
     }
-
-    .popup-close-btn {
-        font-size: 5vw;
-        right: 2%;
-        top: 0%;
-    }
-
-    .slider-next,
-    .slider-prev {
-        font-size: 8vw;
-    }
-
-    .slider-prev{
-        left: 4%;
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .header_content a {
+
+    .header_content a,
+    .main-header-content a {
         font-size: 3vw;
     }
 
@@ -932,21 +880,6 @@ h1 {
         font-size: 3.5vw;
     }
 
-    .popup-close-btn {
-        font-size: 4vw;
-        right: 3%;
-        top: 0%;
-    }
-
-    .slider-next,
-    .slider-prev {
-        font-size: 6vw;
-    }
-
-    .slider-prev{
-        left: 3%;
-    }
-
     .footer-item a {
         font-size: 2vw;
     }
@@ -957,8 +890,7 @@ h1 {
     }
 }
 
-/* горизонтальная ориентация для главной страницы */
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 2400px) {
     .title {
         font-size: 8vw;
     }
@@ -976,9 +908,14 @@ h1 {
 }
 
 /* когда экран больше 769рх отключаю бургер-меню */
-@media (min-width:769px) {
+@media (min-width:769px) or (orientation: landscape) {
     .burger-btn {
         display: none;
+    }
+
+    .burger-bg.active {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
@@ -995,20 +932,3 @@ h1 {
         align-items: center;
     }
 }
-
-@media (max-width:768px) and (orientation: landscape) {
-    .header_content {
-        visibility: hidden;
-    }
-
-    #films-burger{
-        display: none;
-    }
-}
-
-/* @media (orientation: landscape) {
-    .burger-bg.active {
-        visibility: hidden;
-        opacity: 0;
-    }
-} */
