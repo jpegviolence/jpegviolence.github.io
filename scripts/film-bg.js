@@ -2,7 +2,7 @@ let filmBG = document.querySelector('.films-bg')
 let id //id получаемой ссылки
 
 // массив с картинками для бэкграунда
-const BGpics = ["url(img/ISA/isa3.jpg)",
+const BGpics = ["url(img/ISA/ISA.jpg)",
     "url(img/irreversible/irreversible.jpg)",
     "url(img/ETV/ETV.jpg)",
     "url(img/love/love.jpg)",
