@@ -129,7 +129,7 @@ body {
 
 /* фон для страницы с фильмами */
 .films-bg {
-    background: url(../img/ISA/ISA.jpg);
+    background: url(../img/climax/climax.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -223,7 +223,6 @@ body {
 }
 
 /*---------------------------текст----------------------------------*/
-/* текст на картинке */
 .img-title,
 .synopsis,
 h1 {
@@ -232,6 +231,7 @@ h1 {
     user-select: none;
 }
 
+/* текст на картинке */
 .img-title {
     font-weight: 900;
     font-size: 10vw;
@@ -886,8 +886,8 @@ h1 {
     }
 }
 
-/* до 1000рх */
-@media (min-width: 769px) and (max-width: 1000px) and (orientation: portrait) {
+/* до 1024рх */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
     .main-header-content a {
         font-size: 6vw;
     }
