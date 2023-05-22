@@ -129,7 +129,7 @@ body {
 
 /* фон для страницы с фильмами */
 .films-bg {
-    background: url(../img/climax/climax.jpg);
+    background: url(../img/ISA/ISA.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
